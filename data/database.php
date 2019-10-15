@@ -1,10 +1,4 @@
-<?php
-// エラーを出力する
-ini_set('display_errors', "On");
-?>
-
-<?php echo "データベース接続をしてみます";
-
+<?php 
 
     try {
             require("mysql.php");
@@ -40,3 +34,10 @@ ini_set('display_errors', "On");
         
         
 ?>
+
+ <p>データベース接続をしてみます。<br>
+ localhost:4040にアクセスすると、データベースを管理できるphpMyadminが開きます.
+ <br>
+ user userpassでログインできます。<br>
+ 今はデータを管理するテーブルが一つもないので、教科書を参考にしつつdemoテーブルを作り、
+ idカラム,nameカラム,typeカラム,ageカラムの構造にしてください。</p>
