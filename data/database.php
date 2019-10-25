@@ -36,7 +36,7 @@
 ?>
 
  <p>データベース接続をしてみます。<br>
- <a href="localhost:4040">localhost:4040</a>にアクセスすると、データベースを管理できるphpMyadminが開きます.
+localhost:4040にアクセスすると、データベースを管理できるphpMyadminが開きます.
  <br>
  user userpassでログインできます。<br>
  今はデータを管理するテーブルが一つもないので、教科書を参考にしつつuserテーブルを作り、
