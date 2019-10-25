@@ -2,7 +2,7 @@
 
     try {
             require("mysql.php");
-            $sql = "SELECT * FROM demo";
+            $sql = "SELECT * FROM user";
             $stmt = $db->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -13,7 +13,7 @@
             $email="demo@cf.commm";
             $age="";
 
-            $sql="INSERT INTO demo (name,type,age)VALUES(:name,:type,:age)";
+            $sql="INSERT INTO user (name,email,age)VALUES(:name,:email,:age)";
                 $stmt_insert=$db->prepare($sql);
                 $stmt_insert->bindValue(':name', $name , PDO::PARAM_STR);
                 $stmt_insert->bindValue(':email', $email , PDO::PARAM_STR);
